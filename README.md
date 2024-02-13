@@ -70,7 +70,7 @@ Ensure it is running at this port to avoid cors issues. You can always check ind
 
 ## Usage
 After logging in or signing up, you can start by creating a new task using the "Add Task" button. 
-Each task requires a title and description, and you can optionally set a priority and deadline.
+Each task requires a title and a deadline is attached to any task.
 Use the dashboard to view, edit, or delete your tasks.
 
 ## Contributing
