@@ -26,9 +26,9 @@ export const AuthContextProvider: React.FC<{ children: React.ReactElement }> = (
       setToken(accesstoken)
       Cookies.set('bas-tok', accesstoken, {
         expires: 30 / (24 * 60), // 30 minutes
-        secure: true,
+        secure: location.protocol === "https:",
         sameSite: 'Strict',
-        httpOnly: true 
+        // httpOnly: true 
       });
       navigate('/')
       setLoading(prev => ({ ...prev, login: false }))
@@ -48,9 +48,9 @@ export const AuthContextProvider: React.FC<{ children: React.ReactElement }> = (
       setToken(accesstoken)
       Cookies.set('bast-tok', accesstoken, {
         expires: 30 / (24 * 60), // 30 minutes
-        secure: true,
+        secure: location.protocol === "https:",
         sameSite: 'Strict',
-        httpOnly: true 
+        // httpOnly: true 
       });
       navigate('/')
       setLoading(prev => ({ ...prev, register: false }))
@@ -89,7 +89,7 @@ export const AuthContextProvider: React.FC<{ children: React.ReactElement }> = (
       if(accesstoken){
         Cookies.set('bast-tok', accesstoken, {
           expires: 30 / (24 * 60),
-          secure: true,
+          secure: location.protocol === "https:",
           sameSite: 'Strict',
           httpOnly: true 
         });

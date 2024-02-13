@@ -10,7 +10,7 @@ const app = express();
 
 const port = process.env.PORT || 4000;
 
-const allowedOrigins = ['https://decktask.onrender.com'];
+const allowedOrigins = ['https://decktask.onrender.com', `http://localhost:5173`];
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -24,6 +24,7 @@ const corsOptions = {
   credentials: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 }
+
 
 app.use(cors(corsOptions));
 

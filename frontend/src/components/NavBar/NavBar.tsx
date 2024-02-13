@@ -38,7 +38,7 @@ const NavBar = () => {
       <div className='flex items-center justify-start gap-x-[1rem]'>
 
         <div className='h-[2.3rem] w-[2.3rem]  rounded-full overflow-hidden'>
-          <img className={`w-full ${imageLoad ? "block" : "hidden"}  h-full`} onLoad={handleImageLoad} src={user.avatar} alt="" />
+          <img className={`w-full ${imageLoad ? "block" : "hidden"} object-cover  h-full`} onLoad={handleImageLoad} src={user.avatar} alt="" />
         </div>
         <span onClick={handleLogout} className='font-[700] cursor-pointer hover:text-pink-400 text-white'>
           Logout
