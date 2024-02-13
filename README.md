@@ -1,4 +1,4 @@
-# Task Management App
+# Deck Task: Simple Task Management App
 This task management app is a full-stack application built using the MERN stack (MongoDB, Express.js, React, and Node.js) and Vite as the front-end build tool.
 It allows users to create, read, update, and delete tasks efficiently. This application aims to help individuals and teams organize their with ease.
 
